@@ -1,0 +1,86 @@
+body{
+    width: 250px;
+    text-align: left;
+}
+
+div.container{
+    margin-top: 20px;
+    display: none;
+}
+div.container.show{
+    display: block;
+}
+div.container * {
+    display: flex;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+input {
+    outline: none;
+    border: 1px black solid;
+    padding: 10px 5px;
+    width: 100%;
+}
+button {
+    margin-top: 10px;
+    background-color: #DB0000;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    line-height: 22px;
+}
+button.green {
+    background-color: #00b894;
+}
+label.title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+label span {
+    line-height: 25px;
+}
+label img {
+    height: 20px;
+    padding-right: 10px;
+}
+label {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding-bottom: 5px;
+}
+span{
+    line-height: 25px;
+}
+span.highlight {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    background-color: #00b894;
+}

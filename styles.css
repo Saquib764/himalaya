@@ -1,0 +1,35 @@
+
+div.doorie-holder {
+    position: fixed;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+    top: 150px;
+    align-items: center;
+    justify-content: center;
+}
+div.doorie-holder video {
+    display: flex;
+    height: 100%;
+}
+div.doorie-holder.doorie-top {
+    top: 0;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+div.doorie-holder .doorie-controls{
+    flex-direction: column;
+    display: block;
+}
+div.doorie-holder .doorie-controls img{
+    width: 20px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+}
+.doorie-top .scalingVideoContainer, .doorie-top .scalingUiContainer {
+    height: 90% !important;
+    top: 10% !important;
+}

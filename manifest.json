@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+
+    "name": "Himalaya",
+    "version": "0.1.2",
+    "version_name": "pluto.2",
+    "description": "Its a new way to remote watch a movie with friends and family over a video call",
+    "icons": {
+        "128": "icons/128.png"
+    },
+    "permissions": ["storage", "declarativeContent"],
+
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "js": ["socket.js", "primevideo.js"],
+        "matches": ["https://*.primevideo.com/*"]
+    }, {
+        "css": ["styles.css", "netflix.css"],
+        "js": ["socket.js", "netflix.js"],
+        "matches": ["https://*.netflix.com/*"]
+    }],
+
+    "page_action": {
+        "default_title": "Himalaya",
+        "default_popup": "join.html"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "web_accessible_resources": [
+        "styles.css",
+        "icons/control/icons8-block-microphone-50.png",
+        "icons/control/icons8-audio-50.png"
+
+    ]
+}
